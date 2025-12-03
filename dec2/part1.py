@@ -13,5 +13,6 @@ for rng in ranges:
         n = str(n)
         if n[:len(n) // 2] == n[len(n) // 2:]: # the problem only requires a simple check to see if the two halves are the same
             invalids.append(int(n))
+            break
 
 print(sum(invalids))
